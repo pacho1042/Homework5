@@ -8,7 +8,11 @@ btnGenerar.addEventListener('click', function () {
     let colorG = Math.floor(Math.random() * 256);
     let colorB = Math.floor(Math.random() * 256);
 
+    let color = `rgb(${colorR}, ${colorG}, ${colorB})`;
 
+    parrafo.textContent = 'Nuevo texto desde el click!!';
+    parrafo.style.backgroundColor = color;
+    console.log('boton clickeado', color);
 
 });
 
